@@ -26,10 +26,30 @@ To write a Python program to create a `Counter` class that can increment the val
 ### PROGRAM
 
 ```
+class Counter:
+    def __init__(self):
+        self.current = 0
 
+    def increment(self):
+        self.current += 1
+
+    def value(self):
+        return self.current
+
+    def reset(self):
+        self.current = 0
+
+counter = Counter()
+
+
+counter.increment()
+counter.increment()
+counter.increment()
+
+print(counter.value())
 ```
 
 ### OUTPUT
-
-
+![Screenshot 2025-04-28 143434](https://github.com/user-attachments/assets/f50f04c3-35df-4ae5-8977-3caad3af1cc7)
 ### RESULT
+Thus the python program to create a `Counter` class that can increment the value of a counter has been implemented successfully.
